@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+header {
+    background-color: cadetblue;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: cornsilk;
+}
+section{
+    display: flex;
+}
+nav {
+    float: left;
+    width: 30%;
+    background: rgb(122, 93, 136);
+    padding: 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color:rgb(130, 191, 202);
+}
+
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+footer {
+    background-color: dimgrey;
+    padding: 10px;
+    text-align: center;
+    color: gainsboro;
+}
+@media only screen and(max-width: 620px)
+{
+    article{
+        width: 100%;
+    }
+    nav{
+        width: 100%;
+    }
+    section{
+        display: block;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
